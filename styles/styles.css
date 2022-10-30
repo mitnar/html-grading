@@ -1,0 +1,248 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/pt-sans-italic.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/fira-sans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    min-width: 1200px;
+    max-width: 1398px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+}
+
+.header-requisites-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    color: #EE3643;
+}
+
+.requisites-container {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding: 14px 0 15px 0;
+}
+
+.header-address {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #32425C;
+    margin-right: 32px;
+}
+
+.header-phone-link {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #293449;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-phone-link::before {
+    content: '';
+    background-image: url('../images/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.header-actions-container {
+    background: #293449;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.actions-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 220px;
+    height: 45px;
+    background-color: #EE3643;
+    margin-right: 21px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-container::before {
+    content: '';
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    display: block;
+}
+
+.search-input {
+    outline: none;
+    border: none;
+    height: 43px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #293449;
+    flex-grow: 1;
+}
+
+.search-button {
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    background-image: url('../images/clear.svg');
+    background-size: 12px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45px;
+    box-sizing: border-box;
+    padding: 0 17px;
+    margin-right: 17px;
+}
+
+.login-container {
+    margin-left: auto;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F1F5F7;
+    text-decoration: none;
+}
+
+.login-link::before {
+    content: '';
+    background: url('../images/login.svg') no-repeat center; 
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    display: block;
+}
+
+.header-menu-container {
+    background: #3D546F;   
+    height: 70px;
+} 
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    column-gap: 24px;
+    width: 820px;
+}
+
+.menu-link {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
